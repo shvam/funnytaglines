@@ -24,13 +24,6 @@ gemini_model = ChatGoogleGenerativeAI(model = "gemini-1.5-flash-latest")
 #Create LLM chain using the prompt template and model
 tagline_chain = tagline_prompt | gemini_model
 
-#Example of using the LLM chain
-# response = tagline_chain.invoke({"number": 5, "topic": "population of India"})
-
-
-
-import streamlit as st
-
 st.header("Funny taglines Generator")
 
 st.subheader("Generate taglines using Gen AI")
