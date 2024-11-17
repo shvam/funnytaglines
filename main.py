@@ -13,7 +13,7 @@ os.environ['GOOGLE_API_KEY'] = st.secrets['GOOGLE_API_KEY']
 
 # create prompt template for generating taglines
 
-tagline_template = "Give me {number} funny taglines about {topic}"
+tagline_template = "Give me {number} funny taglines about {topic}. Refrain from using offensive or abusive language."
 
 tagline_prompt = PromptTemplate(template = tagline_template, input_variables = ['number','topic'])
 
